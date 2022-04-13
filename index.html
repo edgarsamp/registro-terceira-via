@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro Terceira via</title>
+    <link rel="stylesheet" href="resetCss.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <span class="logo">
+        <img class="logoImg" src="assets/terceiraVialogo.png"></img>
+    </span>
+
+    <div class="registro-output">
+      <input type="text" id="registroFinal" />
+
+      <div class="tooltip">
+        <button >
+          <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+          Copiar
+        </button>
+      </div>
+    </div>
+
+    <div class="registro">
+        <label for="name">Nome IRL *</label>
+        <input type="text" id="name" name="name">
+
+        <label for="mainChar">Nome do main char *</label>
+        <input type="text" id="mainChar" name="mainChar">
+
+        <label for="friendName">Nome do amigo</label>
+        <input type="text" id="friendName" name="friendName">
+        
+        <label for="liderName">Lider que deu registro *</label>
+        <input type="text" id="liderName" name="liderName">
+
+        <button type="submit" id="submit">Criar descrição</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

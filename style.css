@@ -1,0 +1,89 @@
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #040404;
+}
+.logo {
+  padding-right: 3px;
+  padding-top: 3px;
+  display: block;
+}
+.logo img {
+  max-width: 250px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.registro-output {
+  margin: 8px 0;
+}
+
+.registro {
+  min-width: 350px;
+  max-width: 50vw;
+  background: white;
+  color: #040404;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 8px 0;
+}
+
+.registro input {
+  margin-bottom: 8px;
+  width: 80%;
+}
+
+.registro #submit {
+  cursor: pointer;
+  width: 80%;
+  border: 0;
+  padding: 8px;
+  background: rgb(139, 139, 139);
+}
+
+.registro #submit:hover {
+  color: white;
+  background: rgb(62, 62, 62);
+}
