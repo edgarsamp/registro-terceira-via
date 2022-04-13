@@ -10,7 +10,7 @@ body {
   display: block;
 }
 .logo img {
-  max-width: 250px;
+  max-width: 300px;
 }
 
 .tooltip {
@@ -61,13 +61,13 @@ body {
   background: white;
   color: #040404;
   font-family: "Open Sans", sans-serif;
-  font-size: 0.8rem;
+  font-size: 1rem;
 
   display: flex;
   align-items: center;
   flex-direction: column;
 
-  padding: 8px 0;
+  padding: 16px 0;
 }
 
 .registro input {
@@ -80,10 +80,11 @@ body {
   width: 80%;
   border: 0;
   padding: 8px;
-  background: rgb(139, 139, 139);
+  background: #adadad;
+  font-weight: bold;
 }
 
 .registro #submit:hover {
   color: white;
-  background: rgb(62, 62, 62);
+  background: #3e3e3e;
 }
